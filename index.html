@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GEO Research Test Sites — IFN735 Phase 2</title>
+<title>GEO Research Test Sites — IFN736 Phase 2</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:Arial,sans-serif;background:#f3f4f6;color:#111827;padding:40px 20px}
@@ -23,14 +23,14 @@ footer{margin-top:32px;font-size:12px;color:#9ca3af}
 <body>
 <div class="wrap">
   <h1>GEO Research Test Sites</h1>
-  <div class="sub">IFN735 · Phase 2 · Incremental ladder + isolated single-technique variants</div>
+  <div class="sub">IFN736 · Phase 2 · Incremental ladder + isolated single-technique variants</div>
 
-  <h2 style="font-size:15px;margin-bottom:10px;color:#374151">Incremental Comparison Ladder</h2>
-
+  <h2 style="font-size:15px;margin:28px 0 10px;color:#374151">Incremental Comparison Ladder</h2>
   <div class="card">
     <div class="info">
       <div class="label">Site A — Baseline</div>
       <div class="desc">No optimisation. Control for the whole ladder.</div>
+      
     </div>
     <a href="01_fc_unoptimised.html">Open →</a>
   </div>
@@ -39,6 +39,7 @@ footer{margin-top:32px;font-size:12px;color:#9ca3af}
     <div class="info">
       <div class="label">Variant 1 — Schema only</div>
       <div class="desc">Same visible content as Site A, TravelAgency + Product + AggregateRating + ItemList schema added.</div>
+      
     </div>
     <a href="08_fc_variant1_schema_only.html">Open →</a>
   </div>
@@ -47,6 +48,7 @@ footer{margin-top:32px;font-size:12px;color:#9ca3af}
     <div class="info">
       <div class="label">Variant 2 — Schema + FAQ</div>
       <div class="desc">Adds FAQPage schema and a visible FAQ section on top of Variant 1.</div>
+      
     </div>
     <a href="09_fc_variant2_schema_faq.html">Open →</a>
   </div>
@@ -55,6 +57,7 @@ footer{margin-top:32px;font-size:12px;color:#9ca3af}
     <div class="info">
       <div class="label">Site B — Full composite</div>
       <div class="desc">Adds answer-first cards, ratings, tags, and stats bar on top of Variant 2.</div>
+      
     </div>
     <a href="02_fc_optimised.html">Open →</a>
   </div>
@@ -62,14 +65,15 @@ footer{margin-top:32px;font-size:12px;color:#9ca3af}
   <div class="card">
     <div class="info">
       <div class="label">Variant 4 — Full + Tables</div>
-      <div class="desc">Adds HowTo schema and structured cancellation/accommodation/booking tables (H4).</div>
+      <div class="desc">Adds HowTo schema and structured cancellation/accommodation/booking tables.</div>
+      
     </div>
     <a href="10_fc_variant4_full_with_tables.html">Open →</a>
   </div>
 
+
   <h2 style="font-size:15px;margin:28px 0 10px;color:#374151">Isolated Technique Variants</h2>
   <div class="sub" style="margin-bottom:16px">Each branches directly from Site A, changing exactly one thing — so each technique's effect can be measured on its own.</div>
-
   <div class="card">
     <div class="info">
       <div class="label">P2 — FAQ only</div>
@@ -106,7 +110,8 @@ footer{margin-top:32px;font-size:12px;color:#9ca3af}
     <a href="14_fc_p5_citations_only.html">Open →</a>
   </div>
 
-  <footer>All 9 sites: 100% static HTML — verified crawler-visible, no JavaScript required to see content.</footer>
+
+  <footer>All 9 sites: 100% static HTML — verified crawler-visible, no JavaScript required to see content. Every card additionally carries a "Best for" line grounded in Flight Centre's real customer persona segments (Modern Family, Escape Artists, Maverick, Flock of Fun-Seekers).</footer>
 </div>
 </body>
 </html>

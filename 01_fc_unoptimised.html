@@ -6,8 +6,8 @@
 <title>Flight Centre — Travel Deals & Packages</title>
 <meta name="description" content="Great travel deals from Flight Centre.">
 
-<!-- SITE A — BASELINE. All 30 products statically rendered in HTML. No schema, no FAQ. No JavaScript needed to see content — this is deliberate, verified with a plain-HTTP fetch test. -->
 <style>
+
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:Arial,sans-serif;font-size:14px;color:#333;background:#f0f0f0}
 .hdr{background:#e31837;padding:12px 20px;display:flex;align-items:center;gap:20px}
@@ -42,9 +42,34 @@ body{font-family:Arial,sans-serif;font-size:14px;color:#333;background:#f0f0f0}
 footer{background:#222;color:#888;padding:16px 20px;font-size:11px;margin-top:24px}
 footer a{color:#888;margin-right:12px}
 .schema-note{background:#eef2ff;border:1px solid #c7d2fe;border-radius:4px;padding:6px 12px;font-size:10px;color:#4338ca;margin-top:8px;display:inline-block}
-</style>
-</head><body>
+.faq-wrap{background:#fff;border-radius:6px;border:1px solid #ddd;padding:20px;margin-bottom:24px}
+.faq-wrap h2{font-size:17px;font-weight:700;margin-bottom:14px;padding-bottom:6px;border-bottom:2px solid #e31837}
+.faq-item{border-bottom:1px solid #eee;padding:10px 0}
+.faq-item:last-child{border:none}
+.faq-q{font-weight:700;font-size:13px;color:#222;margin-bottom:5px}
+.faq-a{font-size:12px;color:#555;line-height:1.6}
+.stats-bar{background:#fff;border-bottom:1px solid #ddd;display:flex;justify-content:center;gap:48px;padding:16px 20px}
+.stats-bar .stat{text-align:center}
+.stats-bar .stat .n{font-size:22px;font-weight:900;color:#e31837}
+.stats-bar .stat .l{font-size:11px;color:#666;margin-top:2px}
+.tables-wrap{background:#fff;border-radius:3px;border:1px solid #ddd;padding:18px 20px;margin-bottom:24px}
+.tables-wrap h2{font-size:17px;font-weight:700;margin-bottom:14px}
+.policy-table{width:100%;border-collapse:collapse;margin-bottom:20px;font-size:12px}
+.policy-table caption{text-align:left;font-weight:700;font-size:13px;color:#222;margin-bottom:8px;caption-side:top}
+.policy-table th{background:#f7f7f7;text-align:left;padding:8px 10px;font-size:11px;text-transform:uppercase;color:#777;border-bottom:2px solid #ddd}
+.policy-table td{padding:9px 10px;border-bottom:1px solid #eee;color:#444}
+.quotes-wrap{background:#fff;border-radius:3px;border:1px solid #ddd;padding:18px 20px;margin-bottom:24px}
+.quotes-wrap h2{font-size:17px;font-weight:700;margin-bottom:14px}
+.quote-item{border-bottom:1px solid #eee;padding:12px 0}
+.quote-item:last-child{border:none}
+.quote-item p{font-size:13px;color:#333;line-height:1.6;font-style:italic}
+.quote-by{font-size:11px;color:#777;margin-top:6px;font-weight:700}
+.schema-note{background:#eef2ff;border:1px solid #c7d2fe;border-radius:4px;padding:6px 12px;font-size:10px;color:#4338ca;margin-top:8px;display:inline-block}
+.card-best{font-size:11px;color:#0369a1;font-weight:700;margin:4px 0}
 
+</style>
+</head>
+<body>
 <div class="hdr">
   <div class="logo">Flight Centre</div>
   <nav>
@@ -66,8 +91,8 @@ footer a{color:#888;margin-right:12px}
 </div>
 
 <div class="main">
-    <h2 class="section-title">Holiday Packages</h2>
-    <div class="grid">
+<h2 class="section-title">Holiday Packages</h2>
+<div class="grid">
       <div class="card">
         <div class="card-img">🌴 Bali, Indonesia</div>
         <div class="card-body">
@@ -75,6 +100,7 @@ footer a{color:#888;margin-right:12px}
           <div class="card-name">Bali Bliss 5-Night Seminyak Package</div>
           <div class="card-desc">5 nights · Couples, Families, Solo</div>
           <div class="card-incl">Return economy flights, 5-night 4★ Seminyak hotel, daily breakfast, airport transfers</div>
+          <div class="card-best">Best for: Modern Family, Escape Artists, Maverick</div>
           <div class="card-price">$1,499 <span>per person twin share</span></div>
           <button class="card-btn">View Deal</button>
         </div>
@@ -86,6 +112,7 @@ footer a{color:#888;margin-right:12px}
           <div class="card-name">Ubud Cultural Escape 7 Days</div>
           <div class="card-desc">7 nights · Couples, Solo, Cultural</div>
           <div class="card-incl">Return flights, 4★ Ubud villa, breakfast, half-day temple tour, rice terrace day trip</div>
+          <div class="card-best">Best for: Escape Artists, Maverick</div>
           <div class="card-price">$1,899 <span>per person twin share</span></div>
           <button class="card-btn">View Deal</button>
         </div>
@@ -96,7 +123,8 @@ footer a{color:#888;margin-right:12px}
           <div class="card-dest">Gold Coast, QLD</div>
           <div class="card-name">Gold Coast Family Theme Park 5-Night Package</div>
           <div class="card-desc">5 nights · Families</div>
-          <div class="card-incl">5-night apartment stay, 3-day Theme Park Pass (Movie World, Sea World, Wet&quot;n&quot;Wild), car hire</div>
+          <div class="card-incl">5-night apartment stay, 3-day Theme Park Pass (Movie World, Sea World, Wet'n'Wild), car hire</div>
+          <div class="card-best">Best for: Modern Family</div>
           <div class="card-price">$1,289 <span>per family of 4 total</span></div>
           <button class="card-btn">View Deal</button>
         </div>
@@ -108,6 +136,7 @@ footer a{color:#888;margin-right:12px}
           <div class="card-name">Cairns Reef + Rainforest Family 7 Days</div>
           <div class="card-desc">7 nights · Families</div>
           <div class="card-incl">Return BNE-CNS flights, 4★ resort, Great Barrier Reef cruise, Skyrail Rainforest Cableway</div>
+          <div class="card-best">Best for: Modern Family</div>
           <div class="card-price">$2,199 <span>per adult, kids 50% off</span></div>
           <button class="card-btn">View Deal</button>
         </div>
@@ -119,6 +148,7 @@ footer a{color:#888;margin-right:12px}
           <div class="card-name">Melbourne→Phuket 5-Night Beach Escape</div>
           <div class="card-desc">5 nights · Budget travellers, Couples</div>
           <div class="card-incl">Return MEL-HKT flights, 4★ Patong beachfront hotel, breakfast, airport transfers</div>
+          <div class="card-best">Best for: Escape Artists</div>
           <div class="card-price">$1,899 <span>per person twin share</span></div>
           <button class="card-btn">View Deal</button>
         </div>
@@ -130,6 +160,7 @@ footer a{color:#888;margin-right:12px}
           <div class="card-name">Melbourne→Bangkok 4-Night City Break</div>
           <div class="card-desc">4 nights · Budget travellers, Solo</div>
           <div class="card-incl">Return MEL-BKK flights, 4★ Sukhumvit hotel, breakfast, river cruise dinner included</div>
+          <div class="card-best">Best for: Maverick</div>
           <div class="card-price">$1,399 <span>per person twin share</span></div>
           <button class="card-btn">View Deal</button>
         </div>
@@ -141,6 +172,7 @@ footer a{color:#888;margin-right:12px}
           <div class="card-name">Maldives Overwater Villa Honeymoon</div>
           <div class="card-desc">7 nights · Honeymooners, Luxury, Couples</div>
           <div class="card-incl">Return flights, 7-night overwater villa, all-inclusive meals + drinks, sunset cruise, couples spa</div>
+          <div class="card-best">Best for: Escape Artists</div>
           <div class="card-price">$6,499 <span>per couple total</span></div>
           <button class="card-btn">View Deal</button>
         </div>
@@ -152,6 +184,7 @@ footer a{color:#888;margin-right:12px}
           <div class="card-name">Bora Bora Romantic Escape</div>
           <div class="card-desc">8 nights · Honeymooners, Luxury, Couples</div>
           <div class="card-incl">Return flights, 8-night overwater bungalow, breakfast, lagoon cruise, romantic dinner on motu</div>
+          <div class="card-best">Best for: Escape Artists</div>
           <div class="card-price">$7,899 <span>per couple total</span></div>
           <button class="card-btn">View Deal</button>
         </div>
@@ -163,6 +196,7 @@ footer a{color:#888;margin-right:12px}
           <div class="card-name">Denarau Island All-Inclusive 5 Nights</div>
           <div class="card-desc">5 nights · Couples, Families</div>
           <div class="card-incl">Return flights, 5-night all-inclusive Sheraton Denarau, all meals + drinks, kids club, transfers</div>
+          <div class="card-best">Best for: Modern Family, Escape Artists</div>
           <div class="card-price">$2,499 <span>per person twin share</span></div>
           <button class="card-btn">View Deal</button>
         </div>
@@ -174,6 +208,7 @@ footer a{color:#888;margin-right:12px}
           <div class="card-name">Mamanuca Islands All-Inclusive 7 Nights</div>
           <div class="card-desc">7 nights · Couples, Families, Honeymooners</div>
           <div class="card-incl">Return flights + boat transfer, 7-night all-inclusive Castaway Island Resort, all meals, snorkelling</div>
+          <div class="card-best">Best for: Modern Family, Escape Artists</div>
           <div class="card-price">$3,199 <span>per person twin share</span></div>
           <button class="card-btn">View Deal</button>
         </div>
@@ -185,6 +220,7 @@ footer a{color:#888;margin-right:12px}
           <div class="card-name">Last-Minute Bali 4-Night Deal</div>
           <div class="card-desc">4 nights · Spontaneous travellers, Budget travellers</div>
           <div class="card-incl">Return SYD-DPS flights, 4-night 4★ Kuta hotel, breakfast, airport transfers — departures within 7 days</div>
+          <div class="card-best">Best for: General / not FC-segment-mapped</div>
           <div class="card-price">$1,099 <span>per person twin share</span></div>
           <button class="card-btn">View Deal</button>
         </div>
@@ -196,6 +232,7 @@ footer a{color:#888;margin-right:12px}
           <div class="card-name">SYD→Auckland Last-Minute Weekend Escape</div>
           <div class="card-desc">3 nights · Spontaneous travellers, Couples</div>
           <div class="card-incl">Return SYD-AKL flights, 3-night CBD hotel, breakfast — departures within 14 days</div>
+          <div class="card-best">Best for: Escape Artists</div>
           <div class="card-price">$899 <span>per person twin share</span></div>
           <button class="card-btn">View Deal</button>
         </div>
@@ -207,6 +244,7 @@ footer a{color:#888;margin-right:12px}
           <div class="card-name">Queenstown Adventure 5-Night Package</div>
           <div class="card-desc">5 nights · Adventure seekers, Solo, Couples</div>
           <div class="card-incl">Return flights to Queenstown, 5-night central hotel, AJ Hackett bungy jump, Shotover jet boat, 1-day ski pass Coronet Peak</div>
+          <div class="card-best">Best for: Escape Artists, Maverick</div>
           <div class="card-price">$2,199 <span>per person twin share</span></div>
           <button class="card-btn">View Deal</button>
         </div>
@@ -218,17 +256,19 @@ footer a{color:#888;margin-right:12px}
           <div class="card-name">South Island Self-Drive Adventure 10 Days</div>
           <div class="card-desc">10 days · Adventure seekers, Couples, Families</div>
           <div class="card-incl">Return flights, 10-day rental car, 9 nights mixed accommodation, Milford Sound cruise, Franz Josef glacier helihike</div>
+          <div class="card-best">Best for: Modern Family, Escape Artists</div>
           <div class="card-price">$2,899 <span>per person twin share</span></div>
           <button class="card-btn">View Deal</button>
         </div>
       </div>
       <div class="card">
-        <div class="card-img">🎡 London &amp; Paris</div>
+        <div class="card-img">🎡 London & Paris</div>
         <div class="card-body">
           <div class="card-dest">London &amp; Paris</div>
           <div class="card-name">London + Paris Budget Combo 8 Days</div>
           <div class="card-desc">8 nights · Budget travellers, Couples, Solo</div>
           <div class="card-incl">Return flights, 4 nights London + 4 nights Paris (3★ hotels), Eurostar transfer, breakfast</div>
+          <div class="card-best">Best for: Escape Artists, Maverick</div>
           <div class="card-price">$2,199 <span>per person twin share</span></div>
           <button class="card-btn">View Deal</button>
         </div>
@@ -240,6 +280,7 @@ footer a{color:#888;margin-right:12px}
           <div class="card-name">Whitsundays Sail &amp; Stay 5 Nights</div>
           <div class="card-desc">5 nights · Beach lovers, Couples, Families</div>
           <div class="card-incl">Return flights to Hamilton Island, 5-night beachfront resort, 2-day catamaran sailing trip Whitehaven Beach</div>
+          <div class="card-best">Best for: Modern Family, Escape Artists</div>
           <div class="card-price">$2,299 <span>per person twin share</span></div>
           <button class="card-btn">View Deal</button>
         </div>
@@ -251,13 +292,14 @@ footer a{color:#888;margin-right:12px}
           <div class="card-name">Sunshine Coast Beach Resort 4 Nights</div>
           <div class="card-desc">4 nights · Beach lovers, Families</div>
           <div class="card-incl">Return flights to Sunshine Coast, 4-night Noosa beachfront resort, breakfast, car hire included</div>
+          <div class="card-best">Best for: Modern Family</div>
           <div class="card-price">$1,199 <span>per person twin share</span></div>
           <button class="card-btn">View Deal</button>
         </div>
       </div>
-    </div>
-    <h2 class="section-title">Tours</h2>
-    <div class="grid">
+</div>
+<h2 class="section-title">Tours</h2>
+<div class="grid">
       <div class="card">
         <div class="card-img">🗾 Japan (Tokyo–Kyoto–Osaka)</div>
         <div class="card-body">
@@ -265,17 +307,19 @@ footer a{color:#888;margin-right:12px}
           <div class="card-name">Solo Traveller Japan 10-Day Small Group Tour</div>
           <div class="card-desc">10 days · Solo travellers, Cultural</div>
           <div class="card-incl">Return flights, 9 nights 4★ hotels (single occupancy, no supplement), JR Pass, daily breakfasts, English guide</div>
+          <div class="card-best">Best for: Maverick</div>
           <div class="card-price">$4,899 <span>per person, no single supplement</span></div>
           <button class="card-btn">View Deal</button>
         </div>
       </div>
       <div class="card">
-        <div class="card-img">✈ Tokyo &amp; Kyoto</div>
+        <div class="card-img">✈ Tokyo & Kyoto</div>
         <div class="card-body">
           <div class="card-dest">Tokyo &amp; Kyoto</div>
           <div class="card-name">Tokyo + Kyoto Solo Explorer 7 Days</div>
           <div class="card-desc">7 nights · Solo travellers, Budget travellers</div>
           <div class="card-incl">Return flights, 7-night 3★ hotels (single room), 7-day JR Pass, Mt Fuji day trip, food tour evening</div>
+          <div class="card-best">Best for: Maverick</div>
           <div class="card-price">$3,299 <span>per person, single room</span></div>
           <button class="card-btn">View Deal</button>
         </div>
@@ -287,17 +331,19 @@ footer a{color:#888;margin-right:12px}
           <div class="card-name">Senior Vietnam Heritage Tour 12 Days</div>
           <div class="card-desc">12 days · Seniors, Cultural</div>
           <div class="card-incl">Return flights, 11-night 4★ hotels, all internal transport, Halong Bay overnight cruise, fully escorted English guide</div>
+          <div class="card-best">Best for: Escape Artists</div>
           <div class="card-price">$3,899 <span>per person twin share</span></div>
           <button class="card-btn">View Deal</button>
         </div>
       </div>
       <div class="card">
-        <div class="card-img">🏛 Italy &amp; Spain</div>
+        <div class="card-img">🏛 Italy & Spain</div>
         <div class="card-body">
           <div class="card-dest">Italy &amp; Spain</div>
           <div class="card-name">Italy &amp; Spain Coach Tour for Seniors 14 Days</div>
           <div class="card-desc">14 days · Seniors, Cultural</div>
           <div class="card-incl">Return flights, 13-night 4★ hotels, daily breakfast + 8 dinners, luxury coach, English-speaking tour director</div>
+          <div class="card-best">Best for: Escape Artists</div>
           <div class="card-price">$5,499 <span>per person twin share</span></div>
           <button class="card-btn">View Deal</button>
         </div>
@@ -309,6 +355,7 @@ footer a{color:#888;margin-right:12px}
           <div class="card-name">Best of Europe Coach Tour 14 Days</div>
           <div class="card-desc">14 days · Budget travellers, Groups</div>
           <div class="card-incl">Return flights, 13-night 3★ hotels, luxury coach, daily breakfast + 6 dinners, 8 countries</div>
+          <div class="card-best">Best for: Flock of Fun-Seekers</div>
           <div class="card-price">$3,499 <span>per person twin share</span></div>
           <button class="card-btn">View Deal</button>
         </div>
@@ -320,13 +367,14 @@ footer a{color:#888;margin-right:12px}
           <div class="card-name">Group Tour Vietnam 10 Days (10+ pax)</div>
           <div class="card-desc">10 days · Groups, Cultural</div>
           <div class="card-incl">Return flights, 9-night hotels, all transport, group rates 15% off published price, dedicated group manager</div>
+          <div class="card-best">Best for: Flock of Fun-Seekers</div>
           <div class="card-price">$2,899 <span>per person twin share, 10+ pax discount</span></div>
           <button class="card-btn">View Deal</button>
         </div>
       </div>
-    </div>
-    <h2 class="section-title">Flights</h2>
-    <div class="grid">
+</div>
+<h2 class="section-title">Flights</h2>
+<div class="grid">
       <div class="card">
         <div class="card-img">🎡 London, UK</div>
         <div class="card-body">
@@ -334,6 +382,7 @@ footer a{color:#888;margin-right:12px}
           <div class="card-name">SYD-LHR Economy Saver Return</div>
           <div class="card-desc">Flight only · Budget travellers, Solo</div>
           <div class="card-incl">Return economy SYD-LHR via Singapore, 23kg checked bag, multi-airline (SQ/QF/EK)</div>
+          <div class="card-best">Best for: Maverick</div>
           <div class="card-price">$1,549 <span>per person return</span></div>
           <button class="card-btn">View Deal</button>
         </div>
@@ -345,6 +394,7 @@ footer a{color:#888;margin-right:12px}
           <div class="card-name">SYD-LON Stopover Singapore Deal</div>
           <div class="card-desc">Flight + 2 nights Singapore · Budget travellers, Couples</div>
           <div class="card-incl">Return SYD-LHR, free 2-night Singapore stopover, 4★ Marina Bay hotel, breakfast</div>
+          <div class="card-best">Best for: Escape Artists</div>
           <div class="card-price">$1,799 <span>per person return</span></div>
           <button class="card-btn">View Deal</button>
         </div>
@@ -356,6 +406,7 @@ footer a{color:#888;margin-right:12px}
           <div class="card-name">SYD-SIN Business Class Return (Singapore Airlines)</div>
           <div class="card-desc">Flight only · Business travellers</div>
           <div class="card-incl">Singapore Airlines Business Class SYD-SIN return, lounge access, 40kg baggage, lie-flat seats</div>
+          <div class="card-best">Best for: General / not FC-segment-mapped</div>
           <div class="card-price">$4,299 <span>per person return</span></div>
           <button class="card-btn">View Deal</button>
         </div>
@@ -367,13 +418,14 @@ footer a{color:#888;margin-right:12px}
           <div class="card-name">MEL-SIN Business Class Saver (Qantas)</div>
           <div class="card-desc">Flight only · Business travellers</div>
           <div class="card-incl">Qantas Business Class MEL-SIN return, lounge access, 40kg baggage, A330 fully-flat seats</div>
+          <div class="card-best">Best for: General / not FC-segment-mapped</div>
           <div class="card-price">$3,799 <span>per person return</span></div>
           <button class="card-btn">View Deal</button>
         </div>
       </div>
-    </div>
-    <h2 class="section-title">Cruises</h2>
-    <div class="grid">
+</div>
+<h2 class="section-title">Cruises</h2>
+<div class="grid">
       <div class="card">
         <div class="card-img">🚢 Mediterranean (Barcelona–Rome)</div>
         <div class="card-body">
@@ -381,6 +433,7 @@ footer a{color:#888;margin-right:12px}
           <div class="card-name">7-Night Western Mediterranean Luxury Cruise</div>
           <div class="card-desc">7 nights · Couples, Luxury, Honeymooners</div>
           <div class="card-incl">Royal Caribbean Symphony of the Seas, balcony stateroom, all meals, 5 ports</div>
+          <div class="card-best">Best for: Escape Artists</div>
           <div class="card-price">$3,499 <span>per person twin share</span></div>
           <button class="card-btn">View Deal</button>
         </div>
@@ -392,6 +445,7 @@ footer a{color:#888;margin-right:12px}
           <div class="card-name">12-Day Greek Isles Cruise + Athens</div>
           <div class="card-desc">12 nights · Couples, Luxury, Honeymooners</div>
           <div class="card-incl">Celebrity Apex, ocean-view stateroom, all meals, beverage package, 8 ports incl Santorini &amp; Mykonos</div>
+          <div class="card-best">Best for: Escape Artists</div>
           <div class="card-price">$5,299 <span>per person twin share</span></div>
           <button class="card-btn">View Deal</button>
         </div>
@@ -403,12 +457,12 @@ footer a{color:#888;margin-right:12px}
           <div class="card-name">Group Cruise South Pacific 7 Days (10+ pax)</div>
           <div class="card-desc">7 nights · Groups, Couples, Families</div>
           <div class="card-incl">P&amp;O Pacific Adventure, ocean-view cabin, all meals, group concierge, complimentary group dining package</div>
+          <div class="card-best">Best for: Modern Family, Escape Artists, Flock of Fun-Seekers</div>
           <div class="card-price">$2,499 <span>per person twin share, 10+ pax discount</span></div>
           <button class="card-btn">View Deal</button>
         </div>
       </div>
-    </div>
-
+</div>
 </div>
 
 <footer>
